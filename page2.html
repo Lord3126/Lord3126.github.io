@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>The Movie Blog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+<script src="lightslider.js"></script>
+<style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+</head>
+<body>
+  <section class="main">
+    <div class="background-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Santa_Monica_%E2%80%93_Third_Street_Promenade_-_Movie_theatre.jpg/1600px-Santa_Monica_%E2%80%93_Third_Street_Promenade_-_Movie_theatre.jpg);"></div>
+    <div class="main-content-area">
+      <h1>The Godfather:</h1>
+      <h3> The Best Movie</h3>
+    </div>
+  </section>
+  
+  <section class="posters">
+    <div class="item">            
+            <div class="clearfix" style="max-width:474px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb=""> 
+                        <img src="https://sleeplessthought.files.wordpress.com/2014/06/brando-godfather.jpg" width="470" />
+                         </li>
+                    <li data-thumb=""> 
+                        <img src="https://i.ytimg.com/vi/HiCnnsHfadU/maxresdefault.jpg" width="470" />
+                         </li>
+                    <li data-thumb=""> 
+                        <img src="https://www.rd.com/wp-content/uploads/2016/02/the-godfather-marlon-brando.jpg" width="470"/>
+                         </li>
+                    <li data-thumb=""> 
+                        <img src="http://www.billdamon.com/wp-content/uploads/2013/03/caanCamera.png" width="470" />
+                         </li>
+                </ul>
+            </div>
+        </div>
+    <h3 class="title">What Makes The Godfather The Best Movie?</h3>
+      <p> Personal opinion that I have a feeling a lot of individuals may agree with, The Godfather is the best movie of all time. Frances Ford Coppola, the director, used countless ingenious ways to come up with this classic gangster film. All eight elements are visually answered and portrayed on screen, what a film!
+ </p>
+    <hr>
+  </section>
+       
+
+  
+  <footer>
+     <a href="index.html"><h1 align="center">Go Home</h1></a>
+  </footer>
+
+</body>
+</html>

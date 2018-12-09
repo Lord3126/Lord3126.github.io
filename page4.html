@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>The Movie Blog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+<script src="lightslider.js"></script>
+<style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+</head>
+<body>
+  <section class="main">
+    <div class="background-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Santa_Monica_%E2%80%93_Third_Street_Promenade_-_Movie_theatre.jpg/1600px-Santa_Monica_%E2%80%93_Third_Street_Promenade_-_Movie_theatre.jpg);"></div>
+    <div class="main-content-area">
+      <h1> Jaws: The Revenge</h1>
+      <h3> The Worst Movie</h3>
+    </div>
+  </section>
+  
+  <section class="posters">
+    <div class="item">            
+            <div class="clearfix" style="max-width:474px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb=""> 
+                        <img src="https://pbs.twimg.com/media/DSnME46X4AAvEJD.jpg"width="470" />
+                         </li>
+                    <li data-thumb=""> 
+                        <img src="https://i.dailymail.co.uk/i/pix/2016/01/30/00/02EBB577000005DC-3423730-image-a-37_1454115485891.jpg" width="470"/>
+                         </li>
+                    <li data-thumb=""> 
+                        <img src="https://lwlies.com/wp-content/uploads/2016/07/jaws-the-revenge-1108x0-c-default.jpg" width="470" />
+                         </li>
+                </ul>
+            </div>
+        </div>
+    <h3 class="title">What Makes The Revenge The Worst Movie?</h3>
+      <p> Jaws: The Revenge is ironically is the WORST movie of all time! Firstly, they have no storyline as they acted as if they never had made an original JAWS. This massive Shark also had no problem squeezing through these tiny holes that the main character could barely make it through. Towards the ending, for no reason, the shark makes contact with the boat and explodes, leading to sinkage. Simply makes zero sense. It’s also a sequel to the most iconic movie of all time, so it has quite a bit of expectations to live up to! </p>
+    <hr>
+  </section>
+       
+
+  
+  <footer>
+     <a href="index.html"><h1 align="center">Go Home</h1></a>
+  </footer>
+
+</body>
+</html>
